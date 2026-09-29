@@ -1,16 +1,11 @@
 {
-  "name": "m1-devcontainer",
+  "name": "m1-devcontainer (build)",
   "build": {
     "dockerfile": "Dockerfile",
     "context": ".."
   },
-  "customizations": {
-    "vscode": {
-      "extensions": [
-        "ms-python.python",
-        "ms-python.vscode-pylance"
-      ]
-    }
-  },
-  "remoteUser": "vscode"
+  "features": {
+    "ghcr.io/devcontainers/features/node:1": { "version": "lts" },
+    "ghcr.io/anthropics/devcontainer-features/claude-code:1": {}
+  }
 }

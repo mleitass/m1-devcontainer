@@ -1,1 +1,11 @@
-# Add project runtime dependencies here.
+fastapi==0.141.1
+uvicorn[standard]==0.54.0
+pydantic==2.13.5
+httpx==0.28.1
+pytest==9.1.1
+ruff==0.16.9
+bandit==1.9.4
+pip-audit==2.10.1
+schemathesis==4.28.0
+openapi-spec-validator==0.9.0
+pyyaml==6.0.3
